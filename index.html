@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="jQuery">
+        <meta name="author" content="Leszek Słowikowski">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Działanie jQuery</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Zaplanuj dzień</h1>
+        </div>
+        <div class="main">                    
+            <div class="column">
+                <h3>Do zrobienia:</h3>
+                <ul id="wszystkie" class="wszystkie">
+
+                </ul>
+                <label for="nowezadanie">Nowe zadanie</label>
+                <input id="nowezadanie" type="text">
+                <button id="dopisz">Dopisz</button>
+            </div>
+
+            <div class="column">
+                <h3>Do zrobienia na: <input type="date" id="dzien"></h3>
+                <ol id="nadzien" class="nadzien">
+
+                </ol>
+            </div>            
+        </div>
+        <div class="footer">
+            <p>Co masz zrobić dziś, zrób pojutrze, będziesz miał dwa dni wolnego.</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <!-- Mustache.js -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.3.0/mustache.min.js"></script>
+        <script src="./js/skrypt.js"></script>
+    </body>
+</html>

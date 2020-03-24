@@ -1,0 +1,14 @@
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Czyścimy opływanie za kolumnami */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wyrozniony{
+  font-weight: bold;
+}
